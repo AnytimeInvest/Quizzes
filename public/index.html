@@ -1,0 +1,600 @@
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+
+
+	<link rel="apple-touch-icon" type="image/png"
+		href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+
+	<meta name="apple-mobile-web-app-title" content="CodePen">
+
+	<link rel="shortcut icon" type="image/x-icon"
+		href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+	<link rel="mask-icon" type="image/x-icon"
+		href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-b4b4269c16397ad2f0f7a01bcdf513a1994f4c94b8af2f191c09eb0d601762b1.svg"
+		color="#111">
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+		integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+		crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+		integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+		crossorigin="anonymous"></script>
+	<script
+		src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+
+	<title>Anytime Invest</title>
+
+	<link rel="canonical" href="https://codepen.io/alexdevero/pen/YPyreM">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700">
+	<!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+	<link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body translate="no">
+	<section>
+		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<div style="width: 100%;">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" type="button" data-toggle="collapse"
+						data-target=".navbar-collapse" role="button">
+						<span class="sr-only">Toggle Navigation</span>
+
+						<span class="icon-bar"></span>
+
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+
+					<a href="#" class="navbar-brand"><img src="anytime.png" style="width: 130px; height: 50px; "></a>
+				</div>
+
+				<div class="collapse navbar-collapse" style="color: blue; font-size: medium;">
+					<ul class="nav navbar-nav navbar-right js-nav">
+						<li>
+							<a href="https://www.whatsapp.com/channel/0029VaMG5dFJ93wQmh1f1D0C" target="_blank" style="font-size: 25px;">
+								<b><u>Join WhatsApp</u></b>
+							</a>
+						</li>
+						<li><a href="#home" style="font-size: 25px;"><b><u>Home</u></b></a></li>
+						<li><a href="#about" style="font-size: 25px;"><b><u>About</u></b></a></li>
+						<li><a href="#contact" style="font-size: 25px;"><b><u>Contact</u></b></a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</section>
+	<section id="home" class="sec-main">
+		<img src="image1.png">
+	</section>
+	</section>
+	<section>
+
+		<div id="button-container" style="background-color: rgb(195, 238, 253);">
+			<button id="open-button" onclick="openIndex()"><b>Let's Start</b></button>
+		</div>
+		<div id="iframe-container">
+			<div class="form-container step0">
+				<!-- <br> -->
+				<!-- <h1>Page 1</h1> -->
+				<h2 style="color: #007bff;"><b>Welcome to Anytime Invest</b></h2>
+				<div>
+					<button type="button" style="margin-right: 10px;" class="button lightblue quiz-btn"
+						id="alreadyRegisterButton">Already Registered</button>
+					<button type="button" style="margin-left: 10px;" class="button lightblue quiz-btn"
+						id="newRegistrationButton">New Registration</button>
+				</div>
+				<br>
+				<p style="color: #161718;margin-top: 10px;padding: 1px;line-height: 20px;"><b>Thank you for coming to
+						our
+						quiz. <br>
+						Note: The results will be announced on our WhatsApp channel every day at 5 PM. </b></p>
+				<br>
+				<button type="button" class="join-whatsapp-button" style="margin-top: 10px;"
+					onclick="window.open('https://www.whatsapp.com/channel/0029VaMG5dFJ93wQmh1f1D0C', '_blank')">Join
+					WhatsApp</button>
+			</div>
+
+			<!-- Step 1: Registration -->
+			<div class="form-container step1 hidden">
+				<!-- <h1>Page 2</h1> -->
+				<!-- <p style="color: #007bff;font-size: 20px">Anytime Invest</p> -->
+				<p style="color: #007bff;font-size: 40px"><b>Registration Form</b></p>
+				<p style="color: #161718;margin-top: 10px;padding: 1px;line-height: 20px;"><b>Please enter your valid
+						details</b></p>
+				<form id="registrationForm">
+					<div class="form-group input-group" style="box-sizing: border-box;">
+						<input type="text" id="first-name" class="form-input" placeholder="First Name" name="firstName"
+							required>
+						<input type="text" id="last-name" class="form-input" placeholder="Last Name" name="lastName"
+							required>
+						<input type="number" id="age" class="form-input" placeholder="Age" name="age" required>
+						<select id="gender" class="form-input" name="gender" required>
+							<option value="">Select Gender</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+							<option value="other">Other</option>
+						</select>
+						<input type="email" id="email" class="form-input" placeholder="Email" name="email" required>
+
+						<input type="tel" id="mobile" class="form-input" placeholder="Mobile Number" name="mobile"
+							required>
+					</div>
+
+					<button type="submit" class="quiz-submit-btn button"">Submit</button>
+				</form>
+			</div>
+			<!-- Step 2: OTP Verification -->
+			<div class=" form-container step2 hidden">
+						<!-- <h1>Page 3</h1> -->
+						<!-- <h1 style="color: #007bff;">Anytime Invest</h1> -->
+						<h2 style="color: #007bff;">OTP Verification</h2>
+						<br>
+						<p><b>Please enter the OTP sent to your email</b></p>
+						<br><br>
+						<form id="otpForm">
+							<div class="otp-group" style="text-align: start;">
+								<input type="text" id="otp1" maxlength="1">
+								<input type="text" id="otp2" maxlength="1">
+								<input type="text" id="otp3" maxlength="1">
+								<input type="text" id="otp4" maxlength="1">
+								<input type="text" id="otp5" maxlength="1">
+								<input type="text" id="otp6" maxlength="1">
+							</div>
+							<p><b>Not your email? Didn't receive the code? <a href="javascript:void(0)" class="tryAgainLink">Try again</b></a></p>
+
+							<br><br>
+							<button type="button" class="button" id="otpSubmitButton"
+								style="background-color: blue;">Verify</button>
+							<br><br>
+							<!-- <button type="button" class="button" id="tryAgainButton" style="background-color: red;">Try
+								Again</button> -->
+						</form>
+			</div>
+			<!-- Congratulations Page -->
+			<div class="form-container step3 hidden">
+				<!-- <h1>Page 4</h1> -->
+				<!-- <h1 style="color: #007bff;">Anytime Invest</h1> -->
+				<h2 style="color: #28a745;">Congratulations!</h2><br>
+				<p><b>You are registered successfully</b></p>
+				<br><br>
+				<button type="button" class="button green" style="background-color: #007bff;" id="startQuizButton">Start
+					Quiz</button>
+			</div>
+
+			<!-- Quiz Page -->
+			<div class="form-container step4 hidden">
+				<!-- <h1>Page 5</h1> -->
+				<h1 style="color: #007bff;">Quiz</h1>
+				<form id="quizForm">
+					<div class="quiz-question">
+						<p style="color: black;"><b> What is the largest planet in our solar system?</b></p>
+						<div class="uroeee" style="margin: auto;">
+							<div class="uu" style="text-align: start;">
+								<input type="radio" name="question" value="A"><b> Jupiter</b><br>
+								<input type="radio" name="question" value="B"><b> Saturn</b><br>
+								<input type="radio" name="question" value="C"><b> Earth</b><br>
+								<input type="radio" name="question" value="D"><b> Earth</b><br>
+							</div>
+						</div>
+					</div>
+					<button type="submit" class="button" style="background-color: rgb(30, 231, 30);">Submit
+						Quiz</button>
+				</form>
+			</div>
+
+			<!-- Final Page -->
+			<div class="form-container step5 hidden">
+				<!-- <h1>Page 6</h1> -->
+				<h1 style="color: #007bff;"><b>Anytime Invest</b></h1>
+				<h3>Thank you for playing the quiz</h2>
+					<p style="color: green;">The results will be announced on our WhatsApp channel every day at 5 PM.
+					</p>
+					<button type="button" class="join-whatsapp-button"
+						onclick="window.open('https://www.whatsapp.com/channel/0029VaMG5dFJ93wQmh1f1D0C', '_blank')">Join
+						WhatsApp</button>
+			</div>
+
+
+			<div class="form-container step6 hidden">
+				<!-- <h1>Page 7</h1> -->
+				<!-- <h1 style="color: #007bff;">Anytime Invest</h1> -->
+				<h2 style="color:#007bff"><b>Already Registered</b></h2>
+				<p><b>Please enter your registered name and mobile number</b></p>
+				<form id="alreadyRegisteredForm">
+					<div class="form-group input-group">
+						<input type="text" id="registered-email" class="form-input" placeholder="Registered Email"
+							name="registeredEmail" required>
+						<input type="tel" id="registered-mobile" class="form-input"
+							placeholder="Registered Mobile Number" name="registeredMobile" required>
+					</div>
+
+					<button type="button" class="button" style="background-color: #007bff;"
+						id="verifyButton">Verify</button>
+					<br><br>
+					<button type="button" class="register-again-button hidden" id="registerAgainButton">Register
+						Again</button>
+				</form>
+			</div>
+		</div>
+	</section>
+
+	<section id="about" class="sec-about">
+		<div class="container" style="background-color: f0fff9;">
+			<h2 style="text-align: center;"><b>About Me </b></h2>
+
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3" style="text-align: center; font-size: medium;">
+					<div>
+
+						<h3 style="color: #007bff;"><b>Welcome to Anytime Invest's Financial Quiz!</b></h4><br>
+							<p style="font-size: larger;">Anytime Invest, we're passionate about empowering individuals
+								with financial knowledge. Our
+								Financial Quiz is designed to challenge and enhance your understanding of finance while
+								offering
+								exciting rewards.</p>
+							<p style="font-size: larger;">Participate in our daily quiz to test your financial
+								knowledge. Each day presents a new
+								opportunity to showcase your skills and win.</p>
+							<p style="font-size: larger;">At the end of each day, we select one lucky winner who will
+								receive a special prize.</li>
+						8	<p style="font-size: larger;">Stay updated with the latest results by following our WhatsApp
+								channel. We announce the winners
+								and share the quiz highlights there.</p>
+							<p style="font-size: larger;">Our quiz isn't just about winning prizes—it's about staying
+								informed and updating your financial
+								knowledge. Whether you're a finance enthusiast or just starting out, our quiz is a fun
+								and
+								engaging way to learn more about the financial world.</p>
+							<br>
+							<h4 style="font-size: larger;">Join us today, and take your financial knowledge to the next
+								level!</h4><br>
+							<h3>Note: Quiz Start from 9 September at 11:00 Am and the results will be announced on our
+								WhatsApp channel every day at 5 PM. </h3>
+					</div><br>
+					<button type="button" class="join-whatsapp-button"
+						onclick="window.open('https://www.whatsapp.com/channel/0029VaMG5dFJ93wQmh1f1D0C', '_blank')">Join
+						WhatsApp</button><br><br>
+				</div>
+
+			</div>
+		</div>
+		<br>
+	</section>
+
+	<section id="contact" class="sec-contact"></section>
+	<footer id="footer">
+		<div class="container">
+			<ul class="soc-media-ul" style="gap: 5px;">
+				<li>
+					<a href="https://m.facebook.com/Anytimeinvest/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+							class="bi bi-facebook" viewBox="0 0 16 16">
+							<path
+								d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+						</svg></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/anytimeinvest/">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+							class="bi bi-instagram" viewBox="0 0 16 16">
+							<path
+								d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+						</svg></a>
+				</li>
+				<li><a href="https://t.me/Anytimeinvest">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+							class="bi bi-telegram" viewBox="0 0 16 16">
+							<path
+								d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.287 5.906q-1.168.486-4.666 2.01-.567.225-.595.442c-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294q.39.01.868-.32 3.269-2.206 3.374-2.23c.05-.012.12-.026.166.016s.042.12.037.141c-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8 8 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629q.14.092.27.187c.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.4 1.4 0 0 0-.013-.315.34.34 0 0 0-.114-.217.53.53 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09" />
+						</svg></a>
+				</li>
+				<li><a href="https://m.youtube.com/@anytimeInvest">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+							class="bi bi-youtube" viewBox="0 0 16 16">
+							<path
+								d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z" />
+						</svg></a>
+				</li>
+				<li><a href="https://www.whatsapp.com/channel/0029VaMG5dFJ93wQmh1f1D0C">
+						<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+							class="bi bi-whatsapp" viewBox="0 0 16 16">
+							<path
+								d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+						</svg></a>
+				</li>
+			</ul>
+			<br>
+		</div>
+
+
+		<div class="ii" style="color: white; margin: 10px;">
+			<div class="pp">
+				<h3><b>Anytime invest</b></h3>
+				<p>100% safe and secure</p>
+				<p>Just One Transaction Gives You Lifetime Relationship</p>
+			</div>
+			<div class="pp">
+				<h4><b>Products</b></h4>
+				<p>Mutual Fund</p>
+				<p>IPO</p>
+				<p>NFO</li>
+				<p>P2P</p>
+				<p>Stocks</p>
+				<p>Insurance</p>
+			</div>
+			<div class="pp">
+				<h4><b>Company</b></h4>
+				<p>About Us</p>
+				<p>Blog</p>
+				<p>Privacy Policy</p>
+				<p>Term and Conditions</p>
+				<p>Disclaimer</p>
+			</div>
+			<div class="pp">
+				<h4><b>Support</b></h4>
+				<p>Contact Us</p>
+			</div>
+			<div class="pp">
+				<h4><b>Address</b></h4>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-geo-alt" viewBox="0 0 16 16">
+						<path
+							d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+						<path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+					</svg>Om Tower, Plot No. 421, 2nd Floor Kakrola Housing Complex Kakrola Mor, Dwarka, New Delhi,
+					110078</p>
+				<p> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-telephone" viewBox="0 0 16 16">
+						<path
+							d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+					</svg> +91 9818393867</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+						class="bi bi-envelope" viewBox="0 0 16 16">
+						<path
+							d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+					</svg> service@anytimeinvest.com</p>
+			</div>
+		</div>
+		<!-- <div class="las" style="margin: auto; text-align: center; color: white; padding: 20px;">
+	  <div class="line"></div>
+	  <p>Anytime Investment is an AMFI Registered Mutual Fund Distributor.</p>
+	  <p>Disclaimer: Mutual fund investments are subject to market risks. Please read the scheme information and other related documents carefully before investing. Past performance is not indicative of future returns. Please consider your specific investment requirements before choosing a fund, or designing a portfolio that suits your needs.</p>
+	  <p>Anytime Investment makes no warranties or representations, express or implied, on products offered through the platform of Anytime Investment. It accepts no liability for any damages or losses, however, caused, in connection with the use of, or on the reliance of its product or related services. Terms and conditions of the website are applicable. Investments in Securities markets are subject to market risks, read all the related documents carefully before investing.</p>
+	</div> -->
+	</footer>
+	</section>
+
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
+	<script id="rendered-js">
+		$(function () {
+			$('.js-nav a, .js-connect').click(function (e) {
+				e.preventDefault();
+				$('body, html').animate({
+					scrollTop: $($.attr(this, 'href')).offset().top
+				},
+					750);
+			});
+		});
+
+		function openIndex() {
+			document.getElementById('button-container').style.display = 'none';
+			document.getElementById('iframe-container').style.display = 'block';
+		}
+
+	</script>
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			const step0 = document.querySelector('.step0');
+			const step1 = document.querySelector('.step1');
+			const step2 = document.querySelector('.step2');
+			const step3 = document.querySelector('.step3');
+			const step4 = document.querySelector('.step4');
+			const step5 = document.querySelector('.step5');
+			const step6 = document.querySelector('.step6');
+
+			const alreadyRegisterButton = document.getElementById('alreadyRegisterButton');
+			const newRegistrationButton = document.getElementById('newRegistrationButton');
+
+			//const tryAgainButton = document.getElementById('tryAgainButton');
+			tryAgainLink = document.querySelector(".tryAgainLink");
+			const startQuizButton = document.getElementById('startQuizButton');
+			const submitQuizButton = document.querySelector('#quizForm button[type="submit"]');
+			const verifyButton = document.getElementById('verifyButton');
+			const otpSubmitButton = document.getElementById('otpSubmitButton');
+			const showUsersButton = document.getElementById('showUsersButton');
+			const serviceID = "service_m42cjmk";
+			emailjs.init("TmjpLuDOehl8U-n7R");
+				const templateID = "template_16r2kin";
+				var setOtp = "";
+
+				const generateOTP = () => {
+					return Math.floor(100000 + Math.random() * 900000);
+				};
+	
+			alreadyRegisterButton.addEventListener('click', () => {
+				step0.classList.add('hidden');
+				step6.classList.remove('hidden');
+			});
+
+			newRegistrationButton.addEventListener('click', () => {
+				step0.classList.add('hidden');
+				step1.classList.remove('hidden');
+			});
+
+			// Add event listener for the Try Again link
+		tryAgainLink.addEventListener('click', () => {
+			step2.classList.add('hidden'); // Hide the current step (Step 2)
+			step1.classList.remove('hidden'); // Show the registration form (Step 1)
+		});
+
+			registerAgainButton.addEventListener('click', () => {
+				step6.classList.add('hidden');
+				step1.classList.remove('hidden');
+			});
+
+			// tryAgainButton.addEventListener('click', () => {
+			// 	step2.classList.add('hidden');
+			// 	step1.classList.remove('hidden');
+			// });
+
+			startQuizButton.addEventListener('click', () => {
+				step3.classList.add('hidden');
+				step4.classList.remove('hidden');
+			});
+
+			submitQuizButton.addEventListener('click', (event) => {
+				const selectedOption = document.querySelector('input[name="question"]:checked');
+				let mobile;
+				const alreadyRegisteredMobile = document.getElementById('registered-mobile').value;
+				const newUser = document.getElementById('mobile').value;
+
+				if (alreadyRegisteredMobile) {
+					mobile = alreadyRegisteredMobile;
+				} else if (newUser) {
+					mobile = newUser;
+				}
+
+				const formData = {
+					answer: selectedOption.value,
+					mobile: mobile
+				};
+				fetch('/submitQuiz', {
+					method: 'POST',
+					headers: {
+						'Content-Type': 'application/json'
+					},
+					body: JSON.stringify(formData)
+				})
+					.then(response => response.json())
+					.then(data => {
+						if (data.success) {
+							step4.classList.add('hidden');
+							step5.classList.remove('hidden');
+						} else {
+							alert("An error occurred while submitting the quiz.");
+						}
+					})
+					.catch(error => {
+						console.error('Error:', error);
+					});
+				console.log("submit quiz");
+				event.preventDefault();
+				step4.classList.add('hidden');
+				step5.classList.remove('hidden');
+			});
+
+
+			const otpInputs = document.querySelectorAll('.otp-group input');
+			otpInputs.forEach((input, index) => {
+				input.addEventListener('input', () => {
+					if (input.value.length === 1 && index < otpInputs.length - 1) {
+						otpInputs[index + 1].focus();
+					}
+				});
+
+				input.addEventListener('keydown', (event) => {
+					if (event.key === 'Backspace' && input.value.length === 0 && index > 0) {
+						otpInputs[index - 1].focus();
+					}
+				});
+			});
+
+			otpSubmitButton.addEventListener('click', () => {
+				step2.classList.add('hidden');
+				step3.classList.remove('hidden');
+			});
+
+			verifyButton.addEventListener('click', () => {
+				const email = document.getElementById('registered-email').value;
+				const mobile = document.getElementById('registered-mobile').value;
+				fetch(`/verifyUser?email=${email}&mobile=${mobile}`)
+					.then(response => response.json())
+					.then(data => {
+						if (data.exists) {
+							step6.classList.add('hidden');
+							step3.classList.remove('hidden');
+						} else {
+							registerAgainButton.classList.remove('hidden');
+						}
+					})
+					.catch(error => console.error('Error:', error));
+			});
+			const registrationForm = document.getElementById('registrationForm');
+			registrationForm.addEventListener('submit', function (event) {
+				event.preventDefault();
+				step1.classList.add('hidden');
+				step2.classList.remove('hidden');
+
+				const formData = {
+					firstName: document.getElementById('first-name').value,
+					lastName: document.getElementById('last-name').value,
+					age: document.getElementById('age').value,
+					gender: document.getElementById('gender').value,
+					email: document.getElementById('email').value,
+					mobile: document.getElementById('mobile').value
+				};
+				var otp = generateOTP();
+				setOtp = otp;
+
+				console.log(otp)
+				let templateparameter = {
+					from_name: '',
+					OTP: otp,
+					message: `Please check the otp: ${otp}`,
+					reply_to: document.getElementById('email').value
+				};
+				emailjs.send(serviceID, templateID, templateparameter).then((res) => {
+					console.log(res);
+					fetch('/register', {
+						method: 'POST',
+						headers: {
+							'Content-Type': 'application/json'
+						},
+						body: JSON.stringify(formData)
+					})
+						.then(response => response.text())
+						.then(data => {
+							alert(data);
+
+						})
+						.catch(error => {
+							console.error('Error:', error);
+						});
+				});
+
+			});
+			const mobile_nav = document.querySelector(".mobile-navbar-btn");
+			const nav_header = document.querySelector(".navbar");
+			const toggleNavbar = () => {
+				nav_header.classList.toggle("active");
+			};
+
+			mobile_nav.addEventListener('click', () => toggleNavbar())
+			$(function () {
+				$('.js-nav a, .js-connect').click(function (e) {
+					e.preventDefault();
+					$('body, html').animate({
+						scrollTop: $($.attr(this, 'href')).offset().top
+					},
+						750);
+				});
+			});
+		});
+	</script>
+</body>
+
+</html>

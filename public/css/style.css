@@ -1,0 +1,645 @@
+ /* Default styles */
+ *{
+    margin: 0;
+    padding: 0;
+  }
+  .d-none{
+    display: none;
+  }
+  
+  /* General button styles */
+.nav-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px 0;
+}
+
+.nav-buttons a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 12px 25px;
+    border-radius: 50px;
+    background-color: #007bff;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.nav-buttons a:hover {
+    background-color: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Active effect */
+.nav-buttons a:active {
+    background-color: #003c82;
+    transform: scale(0.95);
+}
+
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-buttons a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .nav a {
+      font-size: 15px !important;
+  }
+} 
+   #button-container {
+    background-color: white;
+    /* text-decoration-color: #000; */
+    width: 100%;
+  }
+  #open-button {
+    border: none;
+    color: #f6f3f3;
+    /* color: black; */
+      font-weight: 400;
+    padding: 10px 25px;
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(75, 75, 204);
+    cursor: pointer;
+    border-radius: 50px;
+    /* background-color:rgb(12, 226, 12) ; */
+
+  }
+  #open-button:hover {
+    background-color: white;
+  }
+  #iframe-container {
+    display: none; /* Hide the iframe container initially */
+    /* width: 100%; */
+    /* height: 650px;  */
+    /* height: fit-content;
+    background-color: lightblue; */
+  }
+  #iframe-container iframe {
+    width: 100%;
+    /* height: 100'%; */
+    /* height: fit-content; */
+    border: none;
+  }
+  .button { /* Initial button color */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding around the button */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.button:hover { /* Darker green on hover */
+    transform: scale(1.05); /* Slightly increase the size on hover */
+}
+
+.button:active { /* Even darker green when clicked */
+    transform: scale(0.98); /* Slightly shrink when clicked */
+}
+
+  
+  .line {
+    border-top: 1px solid #000; /* Line color */
+    margin: 0 20px; /* Space from left and right sides */
+  }
+  
+  /* Media query for mobile view */
+  @media screen and (max-width: 768px) {
+    .line {
+      margin: 0 10px; /* Adjust margin for mobile view */
+      border-top-width: 2px; /* Increase line height */
+    }
+  }
+  
+  .sec-main {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* To ensure no overflow */
+  }
+  
+  .sec-main img {
+    display: block;
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  div.ii {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    text-align: lef;
+  }
+  
+  @media screen and (max-width: 768px) {
+    div.ii {
+      display: block;
+      justify-content: normal;
+      gap: 0;
+      /* text-align: center; */
+    }
+  }
+  
+  #button-container {
+    /* height: 200px; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sec-contact .btn, a {
+    transition: all 0.25s;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+  }
+  
+  .navbar a,
+  .sec-about p {
+    text-align: center;
+  }
+  .sec-about{
+    margin-top: 15px;
+  }
+  
+  .navbar a {
+    font-size: 16px;
+  }
+  
+  .navbar .fa-external-link {
+    font-size: 10px;
+  }
+  
+  .main-heading {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 9px;
+    text-transform: uppercase;
+  }
+  
+  .container > h1 {
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .sec-about a {
+    text-decoration: underline;
+  }
+  
+  .sec-services h2,
+  .sec-services p {
+    font-weight: 300;
+    text-align: center;
+  }
+  
+  .sec-testimonials p {
+    font-style: italic;
+  }
+  
+  .sec-contact .btn {
+    text-transform: uppercase;
+  }
+  
+  .soc-media-ul a {
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  /* section {
+    padding: 5em 0;
+  } */
+  
+  footer {
+    padding: 3em 0;
+  }
+  
+  @media screen and (max-width: 768px) and (min-width: 485px) {
+    form {
+      max-width: 70%;
+    }
+    
+  }
+  @media screen and (max-width: 485px) {
+    .mobile-navbar-btn{
+      display:block !important;
+      z-index: 999;
+      color:#212529;
+  }.mobile-navbar-btn .mobile-nav-icon{
+    font-size: 30px;
+
+ }
+ .active .mobile-navbar-btn .close-icon{
+  display: block !important;
+}
+
+/* .active .mobile-navbar-btn  .bar-icon{
+  /* display: none; */
+/* }  */
+
+    .quiz-btn{
+      padding: 10px !important;
+      font-size: 10px !important;
+    }
+    .join-whatsapp-button{
+      padding: 10px !important;
+      font-size: 10px !important;
+    }
+    #open-button{
+      padding: 5px 18px !important;
+    }
+    .navbar-brand img{
+      height: 30px !important;
+      width: 90px !important;
+    }
+  }
+  
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  hr {
+    margin-bottom: 3em;
+    width: 7%;
+  }
+  
+  .sec-folio .row {
+    margin-bottom: 3em;
+  }
+  
+  .sec-folio img {
+    max-width: 100%;
+  }
+  .navbar{
+    border-bottom: 1px solid gray;
+      display: flex;
+      position: relative;
+      /* gap: 2px; */
+      justify-content: space-between;
+      align-items: center;
+      padding: 5px 10px;
+      margin-bottom: 0 !important;
+  }
+  .nav{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+    align-items: center;
+  }
+  .navbar-default {
+    background: #fff;
+  }
+  .mobile-navbar-btn {
+    display: none;
+    
+    
+  }
+   
+   .mobile-navbar-btn .mobile-nav-icon {
+    font-size: 30px;
+    color: white;
+  }
+  
+  .mobile-navbar-btn .close-icon {
+    display: none;
+  }
+  /* .reg-btn{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  } */
+  
+  .navbar .fa-external-link {
+    vertical-align: top;
+  }  
+  .navbar-default .navbar-nav > li > a:hover,
+  .navbar-default .navbar-nav > li > a:focus {
+    color: #ad0000;
+  }
+  
+  .navbar-default .navbar-nav > li > a:active {
+    color: #940000;
+  }
+  
+  .main-heading {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    padding: 0;
+    margin: auto;
+    height: 40px;
+    color: #fff;
+  }
+  
+  .sec-about a {
+    color: #000;
+  }
+  
+  .sec-about a:hover, .sec-about a:focus {
+    color: #ad0000;
+  }
+  
+  .sec-services {
+    background: #f9f9f9;
+    /* background-color: f4f6ff; */
+  }
+  
+  .sec-services i {
+    display: block;
+    margin: auto;
+    width: 45px;
+  }
+  
+  .sec-services .fa-paint-brush {
+    width: 64px;
+  }
+  
+  .sec-services .fa-code {
+    width: 68px;
+  }
+  
+  .sec-services h2 {
+    margin: 1em 0;
+  }
+  
+  .sec-testimonials {
+    /* background: #f9f9f9; */
+    
+  }
+  
+  .sec-contact .form-control:focus {
+    border-color: #ad0000;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+  }
+  
+  .sec-contact .btn {
+    padding: 0.5rem 1.75rem;
+    background: #000;
+    font-size: 0.95rem;
+    color: #fff;
+  }
+  
+  .sec-contact .btn:hover, .sec-contact .btn:focus {
+    background: #ad0000;
+    border-color: #7a0000;
+  }
+  
+  footer {
+    background: #000;
+  }
+  
+  .soc-media-ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .soc-media-ul li:not(:first-child) a {
+    margin-left: 1em;
+  }
+  
+  .soc-media-ul a {
+    display: block;
+    padding: 0.5em 0.65rem;
+    font-size: 1rem;
+    color: #fff;
+    border-radius: 50%;
+    border: 2px solid;
+  }
+  
+  .soc-media-ul a:hover, .soc-media-ul a:focus {
+    color: #ad0000;
+  }
+  
+  @media (min-width: 768px) {
+    .navbar-collapse.collapse {
+      display: block !important;
+      height: 70px !important;
+      padding-bottom: 0;
+      overflow: visible !important;
+      visibility: visible !important;
+    }
+  }
+  
+  .pp {
+    border: 1px solid #000;
+    width: 290px;
+  }
+  
+  #registrationForm{
+  padding-left: 25px;
+      padding-right: 25px;
+      padding-top: 15px;
+      box-sizing: border-box;
+  }
+  
+  .form-container {
+    background: #e1f1f9;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    /* margin-bottom: 20px; */
+    text-align: center;
+  }
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #007bff;
+    font-weight: bold;
+  }
+  .form-input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #9199a1;
+    border-radius: 5px;
+    margin: auto;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  .form-group input[type="text"], .form-group input[type="number"], .form-group input[type="email"], .form-group input[type="tel"] {
+    width: calc(50% - 12px);
+  }
+  .form-group input[type="tel"] {
+    width: calc(75% - 12px);
+  }
+  .quiz-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .quiz-submit-btn{
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 5px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .quiz-btn:hover { background-color: #0056b3; transform: scale(1.05); }
+  .quiz-btn.green { background-color: #28a745; }
+  .quiz-btn.green:hover { background-color: #218838; }
+  .quiz-btn.lightblue { background-color: #17a2b8; }
+  .quiz-btn.lightblue:hover { background-color: #138496; }
+  .quiz-btn.red { background-color: #dc3545; }
+  .quiz-btn.red:hover { background-color: #c82333; }
+  .popup {
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+    border-radius: 5px;
+    z-index: 1000;
+    text-align: center;
+  }
+  .popup.show { display: block; }
+  .popup.red { background-color: #f5c6cb; color: #721c24; border: 1px solid #f5c6cb; }
+  .popup.time-out { background-color: #f8d7da; color: #721c24; }
+  .otp-group {
+    display: flex;
+    justify-content: center;
+  }
+  .otp-group input {
+    width: 40px;
+    font-size: 24px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 2px;
+    border: 2px solid #dee2e6;
+    background: #ffffff;
+    color: #495057;
+    outline: none;
+  }
+  .otp-group input:focus {
+    border: 2px solid #007bff;
+    box-shadow: 0 0 2px 2px #007bff33;
+  }
+  .join-whatsapp-button {
+    background-color: #25D366;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .join-whatsapp-button:hover { background-color: #1EBE6A; transform: scale(1.05); }
+  .register-again-button {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  .register-again-button:hover { background-color: #c82333; transform: scale(1.05); }
+  .input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .input-group input {
+    width: calc(50% - 12px);
+    margin: 5px;
+  }
+  @media (min-width: 1024px) {
+    .form-group input[type="text"], 
+    .form-group input[type="number"], 
+    .form-group input[type="email"], 
+    .form-group input[type="tel"] {
+        width: 60%;
+    }
+    .form-group input[type="text"], .form-group input[type="number"] {
+        width: calc(50% - 12px);
+    }
+    .form-group input[type="email"], 
+    .form-group input[type="tel"] {
+        width: calc(70% - 12px);
+    }
+    .form-group select {
+        width: calc(50% - 12px);
+    }
+    .input-group input {
+        width: calc(50% - 12px);
+    }
+    .otp-group input {
+        width: 50px;
+        font-size: 26px;
+        padding: 12px;
+        margin: 2px;
+    }
+  }
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .form-group input[type="text"], .form-group input[type="number"], .form-group input[type="email"], .form-group input[type="tel"] {
+        width: 100%;
+        display: block;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .otp-group input {
+        width: 30px;
+        font-size: 20px;
+        padding: 8px;
+        margin: 1px;
+    }
+    .join-whatsapp-button {
+        font-size: 16px;
+        padding: 12px 25px;
+    }
+  }
+  /* Laptop View Adjustments */
+  .hidden {
+    display: none;
+  }  
+ 
