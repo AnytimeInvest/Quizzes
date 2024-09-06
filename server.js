@@ -1,4 +1,4 @@
-import dotenv from "dotenv";
+const dotenv = require('dotenv');
 const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('./database');
@@ -70,10 +70,8 @@ app.post('/submitQuiz', (req, res) => {
         if (!row) {
             return res.status(404).json({ success: false, message: 'User not found.' });
         }
-        debugger
         const userId = row.id;
         const date = new Date().toISOString();
-        debugger
         db.run('INSERT INTO quiz (date, answer, user_id) VALUES (?, ?, ?)', [date, answer, userId], (err) => {
             if (err) {
                 console.error(err.message);
@@ -105,5 +103,5 @@ app.get('/showUsers', (req, res) => {
 });
 
 app.listen(port, () => {
-    console.log(`Server running on port ${port}`);
+    console.log(`Server running on port ${port} in ${process.env.NODE_ENV}`);
 });
