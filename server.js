@@ -1,10 +1,13 @@
+import dotenv from "dotenv";
 const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('./database');
 
 const app = express();
 const port = process.env.PORT || 3000;
-
+dotenv.config({
+    path: "./config.env",
+});
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
