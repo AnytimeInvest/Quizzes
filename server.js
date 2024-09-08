@@ -1,17 +1,17 @@
-const dotenv = require('dotenv');
+require('dotenv').config()
 const express = require('express');
 const bodyParser = require('body-parser');
 const db = require('./database');
 
 const app = express();
-const port = process.env.PORT || 3000;
-dotenv.config({
-    path: "./config.env",
-});
+const port = process.env.PORT || 4000;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/public/index.html');
+});
 
 
 app.post('/register', (req, res) => {

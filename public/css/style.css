@@ -39,6 +39,12 @@
 }
 
 
+#verifyButton{
+  width: 75%;
+  font-size: x-large !important;
+  font-weight: 400;
+}
+
 /* Mobile view adjustments */
 @media (max-width: 768px) {
     .nav-buttons {
@@ -265,11 +271,13 @@
 
     .quiz-btn{
       padding: 10px !important;
-      font-size: 10px !important;
+      font-size: 18px !important;
+      font-weight: 500;
     }
     .join-whatsapp-button{
       padding: 10px !important;
-      font-size: 10px !important;
+      font-size: 18px !important;
+      font-weight: 500;
     }
     #open-button{
       padding: 5px 18px !important;
@@ -508,13 +516,17 @@
   .quiz-submit-btn{
     background-color: #007bff;
     color: #fff;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 18px;
-    margin-top: 5px;
+    font-size: 24px;
     transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
+    width: 75%;
+    font-weight: 400;
+    
+
   }
   .quiz-btn:hover { background-color: #0056b3; transform: scale(1.05); }
   .quiz-btn.green { background-color: #28a745; }
@@ -588,6 +600,21 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+  .input-group-Already{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px
+
+  }
+
+  .input-group-Already input {
+
+    width: calc(50% - 12px);
+    margin: 5px;
+
+  }
+  
   .input-group input {
     width: calc(50% - 12px);
     margin: 5px;
@@ -611,6 +638,7 @@
     }
     .input-group input {
         width: calc(50% - 12px);
+        
     }
     .otp-group input {
         width: 50px;
